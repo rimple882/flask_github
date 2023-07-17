@@ -16,8 +16,8 @@ app = Flask(__name__)
 load_dotenv(".env")
 app.config.from_object("default_config")
 app.config.from_envvar("APPLICATION_SETTINGS")
-api = Api(app)
 
+api = Api(app)
 
 def create_tables():
     with app.app_context():
